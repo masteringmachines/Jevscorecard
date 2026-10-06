@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scorecard"
+version = "0.1.0"
+description = "Rank text against a weighted rubric using Jev (TypeSafe's System One model). Re-weight for free."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["jev", "typesafe", "system-one", "rubric", "ranking", "cli"]
+dependencies = []
+
+[project.scripts]
+scorecard = "scorecard.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["scorecard*"]

@@ -1,0 +1,53 @@
+{
+  "name": "Seed-stage startup pitch",
+  "dimensions": [
+    {
+      "id": "clarity",
+      "weight": 2,
+      "question": "How clearly does the pitch explain what the product does and for whom?",
+      "levels": [
+        "Cannot tell what the product is",
+        "Vague; the reader has to guess",
+        "Clear about the product, fuzzy about the customer",
+        "Clear about both the product and the customer"
+      ]
+    },
+    {
+      "id": "market",
+      "weight": 3,
+      "question": "How convincing is the evidence that the market is large and the problem is painful?",
+      "levels": [
+        "No market evidence",
+        "Assertions only",
+        "Some concrete numbers or customer quotes",
+        "Strong, specific evidence of a large, painful problem"
+      ]
+    },
+    {
+      "id": "traction",
+      "weight": 2,
+      "question": "How much real-world traction does the pitch demonstrate?",
+      "levels": [
+        "None",
+        "Early interest only (waitlist, conversations)",
+        "Pilots or first paying customers",
+        "Repeat revenue or fast, measurable growth"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "has_ask",
+      "question": "Does the pitch state a specific funding amount or a concrete ask?",
+      "threshold": 0.5,
+      "must_be": true
+    },
+    {
+      "id": "unsupported_superlatives",
+      "question": "Does the pitch rely on unsupported superlatives like 'revolutionary' or 'best in the world'?",
+      "threshold": 0.7,
+      "must_be": false,
+      "required": false
+    }
+  ]
+}
